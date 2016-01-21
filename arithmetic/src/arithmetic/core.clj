@@ -1,6 +1,7 @@
-(ns arithmetic.core)
+(ns arithmetic.core
+  (:require [clojure.math.numeric-tower :as math]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(def interest 0.1)
+
+(defn cumulative-interest [initial-amount interest years]
+  (* initial-amount (math/expt (+ 1 interest) years)))
