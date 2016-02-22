@@ -41,3 +41,6 @@
 ;; no defaults -> returns nil
 
 (:c {:a 1 :b 2})
+
+
+()
