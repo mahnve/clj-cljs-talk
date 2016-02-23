@@ -1,8 +1,5 @@
 (ns clj-talk.core)
 
-
-
-;; Lists are the basic building block in Lisps
 ;; Clojure is a Lisp
 ;; This a list
 
@@ -17,6 +14,15 @@
 ;; This is how addition is done
 
 (+ 1 2)
+
+;; quote is function that returns a list
+
+(quote (+ 1 2))
+
+;; There is also reader macro for that, which is what we saw in the beginning
+
+'(+ 1 2)
+
 
 ;; The first element in the list is the symbol for a
 ;; function. In this case there is a function called "+"
@@ -51,9 +57,11 @@
 
 {1 3 3 4 "something" :f}
 
+;; Sets
 
+#{1 2 4}
 
-;; The plus function can take multiple arguments
+;; List allow stuff like the plus function taking arbitrary number of args
 
 (+ 1 2 3 4 5 6)
 
@@ -69,7 +77,7 @@
 (class  (* 9999999999999999 888888888888888888888888))
 
 ;; Symbols
-;; TODO
+
 (def a-symbol 1)
 
 ;; Functions
@@ -96,3 +104,17 @@
    (greeting "handsome stranger")))
 
 (println (greeting))
+
+;; def multi
+
+(defmulti area :shape)
+
+(defmethod area :circle [{:keys [r]}]
+  (* Math/PI r r))
+
+(defmethod area :rectangle [{:keys [l w]}]
+  (* l w))
+
+(area {:shape :circle :r 5})
+
+(area {:shape :rectangle :l 2 :w 5})

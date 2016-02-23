@@ -1,5 +1,9 @@
 (ns clj-talk.loops)
 
+
+;; let allows for local assignment
+(let [no-of-chars (apply max (map count ["words" "come" "so" "easily"]))]
+  (str "The longest word is " no-of-chars " chars long"))
 ;; if statement
 
 (if false
@@ -41,10 +45,13 @@
 (for [x (range 5)]
   (+ x 3))
 
-;; while
 
-(let [x (atom 0)]
-  (while (< @x 3)
-    (do
-      (swap! x inc)))
-  @x)
+
+;; loop and recur
+
+(loop [counter 0]
+  (println (str "Iteration " counter))
+  (if (> counter 4)
+    (println "bye then")
+    (recur (inc counter))))
+

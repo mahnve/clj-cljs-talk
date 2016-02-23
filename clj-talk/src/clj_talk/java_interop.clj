@@ -1,8 +1,6 @@
 (ns clj-talk.java-interop
   (:require [clojure.string :as str]))
 
-
-
 (.toUpperCase "hello")
 
 (str/upper-case "hello")
