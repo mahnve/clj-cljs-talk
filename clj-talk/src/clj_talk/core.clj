@@ -7,7 +7,7 @@
 
 ;; Lists can hold anything
 
-'("this is a list" 1 2)
+'("A Forest" 1 2)
 
 ;; Lisp programs are build with lists into operations.
 ;; The interpretator reads the list and evaluates it.
@@ -30,7 +30,7 @@
 
 ;; This is a string
 
-"Hello"
+"Glittering Prize"
 
 ;; Only doublequotes btw
 
@@ -55,11 +55,17 @@
 
 ;; We like to have keywords as map keys, but anything will do
 
-{1 3 3 4 "something" :f}
+{1 3 3 4 "Somebody" :f}
 
 ;; Sets
 
 #{1 2 4}
+
+;; Regexps
+
+#"^hello.*"
+
+(re-seq #"Some\w*" "Someone, Somewhere, In Summertime")
 
 ;; List allow stuff like the plus function taking arbitrary number of args
 
@@ -101,7 +107,7 @@
   ([name]
    (str "Hello there, " name))
   ([]
-   (greeting "handsome stranger")))
+   (greeting "William, it was really nothing")))
 
 (println (greeting))
 

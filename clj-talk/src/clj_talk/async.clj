@@ -1,5 +1,6 @@
 (ns clj-talk.async)
 
+;; Futures
 (let [a (future
           (println "about to sleep")
           (Thread/sleep 4000)
@@ -7,3 +8,5 @@
           "done")]
   (println "in main")
   (println @a))
+
+;; Dereffing a future halts the execution

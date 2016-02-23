@@ -13,7 +13,7 @@
 ;; It's better to have 100 methods acting on one data type that 10 data types with 10 methods each
 ;; - Alan Perlis
 
-(count "hello")
+(count "There Is A Light That Never Goes Out")
 
 (count [1 2 3])
 
@@ -40,7 +40,7 @@
 
 ;; defaults
 
-(get {:a 1 :b 2} :c "unknown")
+(get {:a 1 :b 2} :c "It's No Good")
 
 ;; keys as methods. Crazy stuff
 
@@ -60,7 +60,11 @@
 ;; Done in most efficient manner
 (conj '(1 2 3) 4)
 
+;; Sort
 
+(sort [1 3 4 5 2])
+
+(sort-by count ["Cold" "Just Like Heaven" "Inbetween Days"])
 ;; max apply
 
 (max 1 2 3)
@@ -70,3 +74,26 @@
 (apply max [1 2 3])
 
 (apply + [3 4])
+
+;; into
+
+(into [2 3] [1 4]) 
+
+(into {:a 1} {:b 2 :c 3})
+
+;; assoc
+;; vector associates in pos
+(assoc [1 2] 0 2)
+
+;; maps
+;; Takes arbitrary number of arguments
+(assoc {:a 1} :b 2 :c 3)
+
+;; assoc-in takes an array of keys to walk the map
+(assoc-in {:a {:b 2}} [:a :c] 4)
+
+
+;; Lazy
+
+
+

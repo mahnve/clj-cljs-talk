@@ -5,6 +5,8 @@
 ;; map returns a new collection with function run for every list member
 (map #(* % 80) [1 4 5 6])
 
+(map inc "hello")
+
 ;; filter returns a new collection with all list members that passes predicate
 (filter #(= 3 (count %)) ["bear" "dog" "wolf" "cat"])
 
@@ -27,3 +29,18 @@
   (greet "Marcus"))
 
 
+;; Partial
+
+(def add-10 (partial + 10))
+
+(add-10 20)
+
+
+;; complement
+
+(defn is-my-name [candidate]
+  (= candidate "Marcus"))
+
+(def is-not-my-name (complement is-my-name))
+
+(is-not-my-name "Jens")
