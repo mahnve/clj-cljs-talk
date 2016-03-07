@@ -12,6 +12,7 @@ Presentation
 6. [[file:src/clj_talk/higher_order_functions.clj][Higher Order Functions]]
 7. [[file:src/clj_talk/async.clj][Async]]
 8. [[file:src/clj_talk/java_interop.clj][Java Interop]]
+9. Macros
 
 * Build Web App
 
