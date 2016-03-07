@@ -36,7 +36,7 @@
 
 ;; This is a keyword. You Ruby/Smalltalk people recognize them
 
-:3
+:a
 
 ;; Arrays are a form of lists
 
@@ -102,6 +102,7 @@
 
 (tripler 4)
 
+
 ;; Multi arity
 (defn greeting
   ([name]
@@ -109,7 +110,8 @@
   ([]
    (greeting "William, it was really nothing")))
 
-(println (greeting))
+(greeting "Fredrik")
+
 
 ;; def multi
 

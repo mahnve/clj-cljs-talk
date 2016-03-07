@@ -10,3 +10,6 @@
   (println @a))
 
 ;; Dereffing a future halts the execution
+
+
+;; There is also promises and channels

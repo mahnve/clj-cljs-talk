@@ -1,5 +1,9 @@
 (ns clj-talk.higher-order-functions)
 
+;; It all just functions and data
+
+((first [* "I won't do anything"]) 5 3)
+
 ;; Higher order functions are functions that take functions as parameters
 
 ;; map returns a new collection with function run for every list member
@@ -17,6 +21,19 @@
 
 ;; can take start argument
 (reduce * 500 (range 1 10))
+
+
+(take 3 [1 2 3 4 5 6 7])
+
+(drop 3 [1 2 3 4 5 6 7])
+
+;; take-while takes until predicate fails
+(take-while #(< % 4) [1 2 3 4 5 6 7])
+
+;; Lazy and infinite seqs
+(take 100 (repeat "1 million bottles of beer on the wall"))
+
+(take 3 (repeatedly #(rand-int 10)))
 
 ;; Functions returning functions
 
@@ -44,3 +61,4 @@
 (def is-not-my-name (complement is-my-name))
 
 (is-not-my-name "Jens")
+

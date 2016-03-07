@@ -44,6 +44,13 @@
 (if nil
   "nil is true"
   "nil is false")
+
+;; do
+
+(if true
+  (do (println "This happens!")
+      "And this"))
+
 ;; for loop
 
 (for [x (range 5)]

@@ -93,7 +93,6 @@
 (assoc-in {:a {:b 2}} [:a :c] 4)
 
 
-;; Lazy
 
 
 
