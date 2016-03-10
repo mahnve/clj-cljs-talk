@@ -8,12 +8,13 @@ Presentation
 2. [[file:src/clj_talk/lists_and_seqs.clj][Lists and Seqs]]
 3. [[file:src/clj_talk/loops.clj][Loops and Blocks]]
 4. [[file:src/clj_talk/threading.clj][Threading]]
-5. [[file:src/clj_talk/immutability.clj][Immutability]]
-6. [[file:src/clj_talk/destructuring.clj][Destructuring]]
-7. [[file:src/clj_talk/higher_order_functions.clj][Higher Order Functions]]
-8. [[file:src/clj_talk/async.clj][Async]]
-9. [[file:src/clj_talk/java_interop.clj][Java Interop]]
-10. [[file:src/clj_talk/macros.clj][Macros]]
+5. [[file:src/clj_talk/dispatch_macro.clj][Anonymous function shorthand]]
+6. [[file:src/clj_talk/immutability.clj][Immutability]]
+7. [[file:src/clj_talk/destructuring.clj][Destructuring]]
+8. [[file:src/clj_talk/higher_order_functions.clj][Higher Order Functions]]
+9. [[file:src/clj_talk/async.clj][Async]]
+10. [[file:src/clj_talk/java_interop.clj][Java Interop]]
+11. [[file:src/clj_talk/macros.clj][Macros]]
 
 * Build Web App
 
