@@ -18,7 +18,8 @@
   (* a b))
 
 (same-same-but-different {:a 3 :b 8})
-(defn my-first [[first]]
-  (str "The first one: " first))
+
+(defn my-first [[f]]
+  (str "The first one: " f))
 
 (my-first ["a" "b"])

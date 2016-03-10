@@ -7,7 +7,8 @@
           (println "done sleeping")
           "done")]
   (println "in main")
-  (println @a))
+  (println @a)
+  (println "again"))
 
 ;; Dereffing a future halts the execution
 

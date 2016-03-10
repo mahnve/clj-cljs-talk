@@ -13,7 +13,7 @@
 ;; The interpretator reads the list and evaluates it.
 ;; This is how addition is done
 
-(+ 1 2)
+(+ 1 2 9)
 
 ;; quote is function that returns a list
 
@@ -110,7 +110,8 @@
   ([]
    (greeting "William, it was really nothing")))
 
-(greeting "Fredrik")
+(greeting)
+(greeting "Sylvie")
 
 
 ;; def multi

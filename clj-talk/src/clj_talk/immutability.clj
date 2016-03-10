@@ -7,6 +7,8 @@
 
 (swap! a #(assoc % :a 1))
 
+(fn [x] (assoc x :a 1))
+
 ;; access the value by deref/@
 @a
 (deref a)

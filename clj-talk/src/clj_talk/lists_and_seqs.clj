@@ -34,7 +34,7 @@
 (rest {:a 1 :b 2 :c 3})
 
 
-;; Accessing dicts
+;; Accessing maps
 
 (get {:a 1 :b 2} :a)
 
@@ -42,7 +42,7 @@
 
 (get {:a 1 :b 2} :c "It's No Good")
 
-;; keys as methods. Crazy stuff
+;; keys as function. Crazy stuff
 
 (:a {:a 1 :b 2})
 
