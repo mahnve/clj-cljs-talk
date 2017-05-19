@@ -34,6 +34,22 @@
 
 (take 30 (repeatedly #(rand-int 10)))
 
+;; Project Euler problem 1
+
+(->> (range 10000)
+     (filter #(or (= (mod % 5) 0) (= (mod % 3) 0)))
+     (reduce +))
+
+
+;; problem 2
+
+(def fib
+  ((fn rfib [a b]
+     (lazy-seq (cons a (rfib b (+ a b)))))
+   0 1))
+
+(reduce + (filter even? (take-while #(< % 4000000 ) fib)))
+
 ;; Functions returning functions
 
 ;; Closure

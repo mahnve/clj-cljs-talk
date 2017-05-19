@@ -2,9 +2,7 @@
 
 ;; Sometimes you get a long list of calls:
 
-(dissoc
- (assoc {:a 1 :b 2} :c 1)
- :b)
+(dissoc (assoc {:a 1 :b 2} :c 1) :b)
 
 ;; Sort of hard to read
 

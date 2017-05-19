@@ -1,4 +1,4 @@
-(ns clj-talk.dispatch-macro)
+(ns clj-talk.anonymous-functions)
 
 ;; Things that start with a #
 
