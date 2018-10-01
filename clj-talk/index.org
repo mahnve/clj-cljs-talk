@@ -1,6 +1,16 @@
+#+TITLE: Clojure Workshop
+#+AUTHOR: Marcus Ahnve
+#+EMAIL: marcus.ahnve@valtech.se
+#+OPTIONS: toc:1
+#+OPTIONS: reveal_width:1280
+#+OPTIONS: reveal_slide_number:h/v
+#+OPTIONS: num:nil
+#+OPTIONS: timestamp:nil
+#+REVEAL_TRANS: fade
+
 * Intro
 
-Presentation
+  https://github.com/mahnve/clj-cljs-talk
 
 * Language Walkthrough
 
@@ -8,7 +18,8 @@ Presentation
 2. [[file:src/clj_talk/lists_and_seqs.clj][Lists and Seqs]]
 3. [[file:src/clj_talk/loops.clj][Loops and Blocks]]
 4. [[file:src/clj_talk/threading.clj][Threading]]
-5. [[file:src/clj_talk/dispatch_macro.clj][Anonymous function shorthand]]
+5. [[file:src/clj_talk/dispatch_macro.clj][
+NONYMOUSu FUNCTIONu shorthand]]
 6. [[file:src/clj_talk/immutability.clj][Immutability]]
 7. [[file:src/clj_talk/destructuring.clj][Destructuring]]
 8. [[file:src/clj_talk/higher_order_functions.clj][Higher Order Functions]]
@@ -16,15 +27,28 @@ Presentation
 10. [[file:src/clj_talk/java_interop.clj][Java Interop]]
 11. [[file:src/clj_talk/macros.clj][Macros]]
 
+* 
 * Build Web App
 
 #+begin_src sh
-lein new compojure my-next-agile-method
+lein new luminus my-next-agile-method +cljs
 #+end_src
 
 * Build Uberjar
 
+#+begin_src sh
+lein uberjar
+#+end_src
+
 * Deploy to Heroku
 
+We already have the Procfile
+
+#+begin_src sh
+heroku create
+
+git push heroku master
+
+#+end_src
 
 
