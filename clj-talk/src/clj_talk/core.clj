@@ -1,9 +1,15 @@
 (ns clj-talk.core)
 
-;; Clojure is a Lisp
+;; Welcome to Clojure! 
+;; This is a short code based introduction to Clojure
+
+;; Clojure is a member of the Lisp family of languages. 
+;; Lisp stands for LISt Processing, and indeed, Lisp has a lot of lists.  
 ;; This a list
 
 '(1 2 3)
+
+;; Everything in a Lisp is an expression, that can be evaluated. This means that the above list can be evaluated. 
 
 ;; Lists can hold anything
 
